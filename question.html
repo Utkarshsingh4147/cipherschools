@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML5 Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+    <h1>Welcome to My Webpage</h1>
+    <section id="1to3">
+        <h1>Question 1 to 3</h1>
+    
+        <p>This is a simple HTML5 page containing a title, heading, paragraph, and an image. Learning web development is fun!</p>
+    
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" alt="Image1" width="350">
+    
+        <h2>Contact Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Question 4</h2>
+        <div class="card">
+            This is a card with border, padding, and shadow.
+        </div>
+    </section>
+
+    <section>
+        <h2>Question 5</h2>
+        <button onclick="showGreeting()">Show Greeting</button>
+    </section>
+
+    <section>
+        <h2>Question 6</h2>
+        <p id="sumResult"></p>
+        <button onclick="showSum()">Calculate Sum (5 + 3)</button>
+    </section>
+
+    <section>
+        <h2>Question 7</h2>
+        <p id="message">Original Message</p>
+        <button onclick="changeMessage()">Change Message</button>
+    </section>
+
+    <section>
+        <h2>Question 8</h2>
+        <input type="text" id="inputText" placeholder="Enter some text">
+        <button onclick="updateOutput()">Update Text</button>
+        <p id="outputText"></p>
+    </section>
+
+    <section>
+        <h2>Question 9</h2>
+        <div id="parent">
+            Parent
+            <div>Child 1</div>
+            <div>Child 2</div>
+        </div>
+        <button onclick="logDOM()">Log DOM</button>
+    </section>
+
+    <section>
+        <h2>Question 10</h2>
+        <ul id="myList">
+            <li>Item 1</li>
+        </ul>
+        <button onclick="addListItem()">Add Item</button>
+    </section>
+
+    <section>
+        <h2>Question 11 & 12</h2>
+        <button onclick="createPerson()">Create Person (Constructor)</button>
+        <button onclick="createPersonClass()">Create Person (Class)</button>
+    </section>
+
+    <section align="center">
+        <h2>Question 13 to 16 - Responsive Design</h2>
+        <div class="responsive-container">
+            <div class="responsive-box">Box 1</div>
+            <div class="responsive-box">Box 2</div>
+            <div class="responsive-box">Box 3</div>
+        </div>
+        <br><br>
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" alt="Image2" width="350px">
+
+        <form aria-label="Contact Form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

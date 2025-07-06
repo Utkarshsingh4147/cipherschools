@@ -1,0 +1,114 @@
+/* Base Styles */
+body {
+    background-color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Heading */
+h1 {
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Section Headings */
+section h2 {
+    color: #334155;
+    margin-top: 40px;
+    border-bottom: 2px solid #94a3b8;
+    padding-bottom: 8px;
+}
+
+/* Question 4: Card Styling */
+.card {
+    border: 1px solid #e2e8f0;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-width: 500px;
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+/* Responsive Layout for Q13 & Q16 */
+.responsive-container {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.responsive-box {
+    background-color: #f1f5f9;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    color: #475569;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+form input,
+form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Media Queries (Q14, Q15, Q16) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Q15: Smaller font on small screens */
+        padding: 15px;
+    }
+
+    .responsive-container {
+        flex-direction: column; /* Q16: Change horizontal to vertical */
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
