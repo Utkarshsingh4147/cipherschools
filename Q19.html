@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 19</title>
+</head>
+<body>
+
+    <h1>Greeting and Sum</h1>
+    
+    <button onclick="showGreeting()">Show Greeting</button>
+
+    <h2>Sum of Two Numbers</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <p id="result"></p>
+
+    <script>
+        function showGreeting() {
+            alert("Hello, welcome to Cipher Schools!");
+        }
+
+        const calculateSum = () => {
+            const n1 = parseFloat(document.getElementById("num1").value);
+            const n2 = parseFloat(document.getElementById("num2").value);
+            const sum = n1 + n2;
+            document.getElementById("result").textContent = `Sum: ${sum}`;
+        }
+    </script>
+
+</body>
+</html>

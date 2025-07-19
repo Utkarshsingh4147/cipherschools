@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 20</title>
+</head>
+<body>
+
+    <h1>Message Updater</h1>
+
+    <input type="text" id="inputText" placeholder="Type your message">
+    <button onclick="updateMessage()">Update Message</button>
+    <button onclick="clearMessage()">Clear</button>
+
+    <p id="message"></p>
+
+    <script>
+        function updateMessage() {
+            const input = document.getElementById("inputText").value;
+            document.getElementById("message").textContent = input;
+        }
+
+        function clearMessage() {
+            document.getElementById("inputText").value = "";
+            document.getElementById("message").textContent = "";
+        }
+    </script>
+
+</body>
+</html>

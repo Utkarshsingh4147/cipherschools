@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 21</title>
+</head>
+<body>
+
+    <h1>DOM Navigation and List Manipulation</h1>
+
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeLastItem()">Remove Last Item</button>
+
+    <script>
+        function addItem() {
+            const ul = document.getElementById("itemList");
+            const newItem = document.createElement("li");
+            newItem.textContent = "New Item";
+            ul.appendChild(newItem);
+
+            console.log("Parent Node:", ul.parentNode.nodeName);
+            console.log("First Child:", ul.childNodes[0].textContent);
+            console.log("Next Sibling of UL:", ul.nextElementSibling);
+        }
+
+        function removeLastItem() {
+            const ul = document.getElementById("itemList");
+            if (ul.lastElementChild) {
+                ul.removeChild(ul.lastElementChild);
+            }
+        }
+    </script>
+
+</body>
+</html>
